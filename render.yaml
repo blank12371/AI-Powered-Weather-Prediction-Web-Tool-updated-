@@ -1,0 +1,15 @@
+# Optional Render Blueprint: commit this file and choose "New > Blueprint" in Render.
+services:
+  - type: web
+    name: skycast-weather
+    runtime: python
+    plan: free
+    rootDir: .
+    buildCommand: pip install -r requirements.txt && python train.py
+    startCommand: gunicorn app:app
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: WEB_CONCURRENCY
+        value: "1"
