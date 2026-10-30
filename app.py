@@ -521,7 +521,7 @@ button.ghost:hover{color:var(--ink); background:rgba(255,255,255,.06)}
 .empty .big{font-size:2.6rem}
 .empty p{margin:0; max-width:34ch}
 .out{position:relative}
-.out[hidden],.empty[hidden]{display:none}
+.out[hidden],.empty[hidden],.skeleton[hidden]{display:none}
 .hero-icon{font-size:5.2rem; line-height:1; filter:drop-shadow(0 10px 28px rgba(0,0,0,.35))}
 .cond{font-size:2.1rem; font-weight:600; margin:6px 0 0; letter-spacing:-.02em}
 .temp{display:flex; align-items:baseline; gap:10px; margin-top:2px}
